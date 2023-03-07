@@ -2,58 +2,17 @@ local library = loadstring(game:GetObjects("rbxassetid://7657867786")[1].Source)
 local Wait = library.subs.Wait -- Only returns if the GUI has not been terminated. For 'while Wait() do' loops
 
 local PepsisWorld = library:CreateWindow({
-Name = "Pepsi's World",
+Name = "x64z HUB",
 Themeable = {
-Info = "Discord Server: VzYTJ7Y"
+Info = "Discord Server: xxxxxxx"
 }
 })
 
 local GeneralTab = PepsisWorld:CreateTab({
-Name = "General"
+Name = "หน้าหลัก"
 })
 local FarmingSection = GeneralTab:CreateSection({
-Name = "Farming"
-})
-FarmingSection:AddToggle({
-Name = "EXP Grinder",
-Flag = "FarmingSection_EXPGrinder"
-})
-FarmingSection:AddToggle({
-Name = "Trick Spammer",
-Flag = "FarmingSection_TrickSpammer",
-Keybind = 1,
-Callback = print
-})
-FarmingSection:AddSlider({
-Name = "Trick Rate",
-Flag = "FarmingSection_TrickRate",
-Value = 0.15,
-Precise = 2,
-Min = 0,
-Max = 1
-})
-FarmingSection:AddToggle({
-Name = "TP To Coins",
-Flag = "FarmingSection_TPCoins"
-})
-FarmingSection:AddToggle({
-Name = "Collect Coins",
-Flag = "FarmingSection_CollectCoins",
-Callback = print
-})
-FarmingSection:AddSlider({
-Name = "Coin Distance",
-Flag = "FarmingSection_CoinDistance",
-Value = 175,
-Min = 0,
-Max = 200,
-Format = function(Value)
-if Value == 0 then
-return "Collection Distance: Infinite"
-else
-return "Collection Distance: " .. tostring(Value)
-end
-end
+Name = "ฟาร์ม"
 })
 
 local BoardControlSection = GeneralTab:CreateSection({
